@@ -466,7 +466,7 @@ public class DefaultPublicationWorkflow implements PublicationWorkflow
     private void setupDraftAccess(XWikiDocument document, BaseObject workflow, XWikiContext xcontext)
         throws XWikiException
     {
-        document.setHidden(true);
+        document.setHidden(false);
 
         BaseObject wfConfig =
             configManager.getWorkflowConfig(workflow.getStringValue(WF_CONFIG_REF_FIELDNAME), xcontext);
